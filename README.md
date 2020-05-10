@@ -3,33 +3,44 @@
 #### Required
 - Node >= 13.*
 - npm >= 6.*
-- PostgreSQL / MySql
 
 #### Installation steps
 - Take clone 
-- Install PostgreSQL/MySql database(Used PostgreSQL in example)
 - First run `npm install` command
 - Create copy of `env.example` file with `.env` name
 - Set credential in `.env` file
-- run migration `npx sequelize-cli db:migrate`
-- run seeder `npx sequelize-cli db:seed:all`
 - Run project 'npm start'
 
 #### Details of the example
-- Used `sequelize` ORM.
-- User `json web token` for authentication.
-- User can login or registration by using APIs.
-- User modify our details after login(With JWT token).
+The repository provides AWS Cognito example with signUp, signIn and token verification APIs.
 
 #### List of APIs
-- Authentication APIs(Token is not required)
-    - Registration
-    - Login
+- SignUp (POST: http://localhost:3000/api/v1/signUp)
+  - Required Parameters: 
+    - username
+    - password
+    - email
+    - phone_number
+    - name
+  
+- signIn (POST: http://localhost:3000/api/v1/signIn)
+  - Required Parameters: 
+    - username
+    - password
+   
+- Token Verify (POST: http://localhost:3000/api/v1/user/verify)
+  - Required Parameters: 
+    - token
     
-- Users APIs(Token is required)
-    - Get User
-    - Update User
-    - Delete User
-
-
-NOTE: Postman collection and database in `documents` folder.
+- Update User (POST: http://localhost:3000/api/v1/user/update)
+  - Required Parameters: 
+    - username
+    - password
+    - email
+    - phone_number
+    - name
+    
+- Delete User (POST: http://localhost:3000/api/v1/user/delete)
+  - Required Parameters: 
+    - username
+    - refreshToken
