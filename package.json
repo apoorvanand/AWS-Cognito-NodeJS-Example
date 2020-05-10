@@ -1,0 +1,36 @@
+{
+  "name": "aws-congnito-nodejs",
+  "version": "1.0.0",
+  "description": "The repository provides AWS Cognito example with signUp, signIn and token verification APIs.",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r esm app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msthakur08/AWS-Congnito-NodeJS.git"
+  },
+  "author": "MS Thakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msthakur08/AWS-Congnito-NodeJS/issues"
+  },
+  "homepage": "https://github.com/msthakur08/AWS-Congnito-NodeJS#readme",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^4.2.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.3"
+  }
+}
