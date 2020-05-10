@@ -1,4 +1,4 @@
-## AWS Congnito NodeJS Example 
+## AWS Cognito NodeJS Example 
 
 #### Required
 - Node >= 13.*
