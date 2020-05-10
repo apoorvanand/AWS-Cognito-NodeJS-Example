@@ -1,4 +1,4 @@
-## Express JS API Example
+## AWS Congnito NodeJS 
 
 #### Required
 - Node >= 13.*
